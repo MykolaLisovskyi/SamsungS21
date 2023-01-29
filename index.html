@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung S21 Ultra по специальной цене!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/popup.css" class="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="img/icons8.ico" type="image/x-icon"> 
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.min.js"></script>
+</head>
+
+
+<body>
+    <div class="ol-md-4 col-xs-12 b-popup" id="popup1">
+
+        <div class="popup_content" id="popupVne">
+            <a class="popup_exit" href="javascript:PopUpHide();">×</a>
+            <p class="popup_content_name" id="popup_content_name">Введите номер телефона для связи, и мы наберем вас в ближайшее время</p>
+            <form class="popupform" id="form" name="form">
+<!--
+                <p>Ваше имя</p>
+                <input type="text" name="name" placeholder="Имя" required>
+-->
+                 <p>Ваш контактный телефон</p>
+                 <input type="tel" name="telephone" id="telpopup" 
+                 value="" placeholder="+38(0__) ___-__-__" required>
+                <a  onclick="FormSubmit()">Заказать сейчас</a>
+            </form>
+            <script>
+                function FormSubmit(){
+    document.getElementById("popup1").style.display="none";
+    document.getElementById("thanks").style.display="flex";
+}
+            </script>
+            <p class="polic">Нажимая кнопку “Заказать”, вы соглашаетесь с <a href="javascript:Policy()">Политикой конфиденциальности</a>  </p>
+        </div>
+    </div>
+    <div class="ol-md-4 col-xs-12 b-popup" id="popup2" >
+
+        <div class="popup_content" id="popupVne2">
+            <a class="popup_exit" href="javascript: PopUpHide2();">×</a>
+            <p class="popup_content_name" id="popup_content_name">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+					<p>Наш интернет-магазин уважает права клиента. При оформлении заказа соблюдается строгая конфиденциальность. Информация хранится надежно и защищена от передачи.
+						Согласие на обработку данных клиента с единственной целью оказания услуг — оформление заказа. в месте. К персональным данным относятся персональные данные о клиенте: адрес; Имя, фамилия, личные контакты (телефон, электронная почта) и иная информация, указанная в Законе «О персональных данных». Заказчик вправе отказаться от обработки персональных данных. В этом случае мы гарантируем удаление всех персональных данных с сайта в течение трех дней в рабочее время. Такой отказ клиент может оформить посредством простого электронного письма на адрес, указанный на странице нашего сайта.</p>
+				</div>
+    </div>
+    <div class="ol-md-4 col-xs-12 b-popup" id="thanks" >
+
+        <div class="popup_content" id="thanksVne" >
+            <a class="popup_exit" href="javascript:PopUpHideThanks();">×</a>
+            <p class="popup_content_name" id="popup_content_name">Ваш запрос успешно отправлен</p>
+            <p>Наши менеджеры свяжутся с вами в ближайшее время
+                     </div>
+    </div>
+<script>
+   
+</script>
+    <header id="header">
+        <div class="header__main__top">
+            <div class="header__main__top_width">
+                <div class="header__main__logo">
+                    <img src="img/logo.svg" alt="">
+                    <p>
+                        Топовые смартфоны по выгодным <br> ценам и оплатой после получения
+                    </p>
+                </div>
+
+                <div class="header__main__anchor">
+                    <a href="#review">Обзор</a>
+                    <a href="#delivery">Оплата и доставка</a>
+                </div>
+                <div class="header__main__button">
+                    <a href="javascript:Order();" class="desk">заказать galaxy s21</a>
+                    <a href="javascript:Order();" class="mob">заказать</a>
+
+                </div>
+                <div class="menu">
+                    <content>
+                      <input id="hamburger" class="hamburger" type="checkbox" />
+                      <label class="hamburger" for="hamburger">
+                        <i></i>
+                        <text>
+                        </text>
+                      </label>
+                      <section class="drawer-list">
+                        <ul><input id="hamburger" class="hamburger" type="checkbox" />
+            
+                         
+                          <li><a href="#review" onclick="document.getElementById('hamburger').checked=false;">Обзор</a></li>
+                          <li><a href="#delivery" onclick="document.getElementById('hamburger').checked=false;">Оплата и доставка</a></li>
+                          <li><a href="javascript:Order();" class="order">заказать сейчас</a></li>
+
+                        </ul>
+            
+            
+            
+            
+            
+            
+            
+                      </section>
+                    </content>
+                  </div>
+            </div>
+        </div>
+        <div class="header__main__center">
+            <div class="header__main__info">
+                <p>Смартфон, в котором есть все, что вам нужно, да еще и за <span>9999</span> MXN?<br>
+                    Да, такой есть!</p>
+                <a href="#review">заказать сейчас</a>
+            </div>
+
+        </div>
+        <img src="img/header/fonLeft.png" class="fonLeft" alt="">
+        <img src="img/header/fon.png" alt="" class="fon">
+        <img src="img/header/left_phone.png" class="header_left headerDesk" alt="">
+        <img src="img/header/right_phone.png" class="header_right headerDesk" alt="">
+        <img src="img/header/rightPhoneMob.png" class="header_left headerLeftMob headerMob" alt="">
+        <img src="img/header/leftPhoneMob.png" class="header_right headerRightMob headerMob" alt="">
+    </header>
+    <div class="main">
+        <div class="info">
+            <div class="info__main" id="review">
+                <h2>Galaxy S21 Ultra удивителен со всех сторон</h2>
+                <div class="info__main__content">
+                    <div class="info__main__content__item left desk" data-aos="fade-right" data-aos-offset="350">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Плавное видео с большим  разрешением</p>
+                        </div>
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Качественные фото популярных разрешений</p>
+                        </div>
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>6,8-дюймовый дисплей с глубиной цветов 16В</p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- MOBILE-->
+                    <div class="info__main__content__item left mob">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Плавное видео с большим  разрешением</p>
+                        </div>
+                    </div>
+                    <div class="info__main__content__item right mob">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Качественные фото популярных разрешений</p>
+                        </div>
+                    </div>
+
+                    <div class="info__main__content__item left mob" d>
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>6,8-дюймовый дисплей с глубиной цветов 16В</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info__main__content__item right mob">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>4-ядерный процессор Mediatek MTK 6582</p>
+                        </div>
+                    </div>
+
+
+                    <div class="info__main__content__item left mob">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Поддержка внешней памяти MicroSD до 128 GB</p>
+                        </div>
+                    </div>
+
+                    <div class="info__main__content__item right mob">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Емкость аккумулятора 2050 мАч</p>
+                        </div>
+                    </div>
+
+
+                    <img src="img/info.png" alt="" class="phone" data-aos="fade-up" data-aos-offset="350" />
+                    <div class="ellipse"><img src="img/Ellipse.png" alt=""></div>
+                    <div class="info__main__content__item right desk" data-aos="fade-left" data-aos-offset="350"
+                        data-aos-easing="ease-in-sine">
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Революционный дизайн</p>
+                        </div>
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Поддержка внешней памяти MicroSD до 128 GB</p>
+                        </div>
+                        <div class="item">
+                            <div class="circle">
+                                <div></div>
+                            </div>
+                            <p>Емкость аккумулятора 2050 мАч</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="color">
+            <div class="color__main">
+                <h2>Выбирайте свой личный стиль</h2>
+                <div class="color__main__content">
+                    <div class="item" id="changeColor">
+                        <p id="color">Phantom Black</p>
+                        <div class="background" id="background2"></div>
+                    </div>
+                    <div class="item__color desk">
+                        <a href="javascript:changeColorGray();" id="gray"><img src="img/color/gray.png" alt=""></a>
+                        <a href="javascript:changeColorWhite();" id="white"><img src="img/color/white.png" alt=""></a>
+                        <a href="javascript:changeColorPink();" id="pink"><img src="img/color/pink.png" alt=""></a>
+                        <a href="javascript:changeColorViolet();" id="violet"><img src="img/color/violet.png"
+                                alt=""></a>
+                    </div>
+                    <div class="item__color mob">
+                        <a href="javascript:changeColorGrayM();" id="grayM"><img src="img/color/mobGray.png" alt=""></a>
+                        <a href="javascript:changeColorWhiteM();" id="whiteM"><img src="img/color/mobWhite.png"
+                                alt=""></a>
+                        <a href="javascript:changeColorPinkM();" id="pinkM"><img src="img/color/mobPink.png" alt=""></a>
+                        <a href="javascript:changeColorVioletM();" id="violetM"><img src="img/color/mobViolet.png"
+                                alt=""></a>
+                    </div>
+                </div>
+             
+            </div>
+        </div> -->
+      
+        <div class="camera">
+            <div class="camera__main">
+                <h2>Создавайте впечатляющие фото и видео</h2>
+                <div class="camera__main__top">
+                    <div class="camera__main__item" id="cameraInfo">
+                        <p>2 МП</p>
+                        <p>Фронтальная камера</p>
+                    </div>
+                </div>
+                <div class="camera__main__center">
+                    <div class="camera___main__center__left" id="cameraInfo2">
+                        <div class="camera__main__item">
+                            <p>5 МП</p>
+                            <p>Основная камера</p>
+                        </div>
+                        
+                    </div>
+                    <div class="camera__main__center__right camera_anim" id="camera_anim">
+                        <img src="img/camera.png" class="deskCamera" alt="">
+                        <img src="img/mobileCamera.png" class="mobCamera" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="picture">
+            <h2>Наслаждайтесь высокой <br>
+                производительностью</h2>
+                <img src="img/picture/img1.png" alt="">
+
+        </div>
+        <div class="picture picture2">
+            <h2>
+                Заряжайтесь эмоциями,<br>
+ведь заряда S21 хватит на все
+          </h2>
+                <img src="img/picture/img2.png" alt="">
+
+        </div>
+        <div class="pay">
+            <div class="pay__main" id="delivery">
+                <h3>Хотите перед покупкой убедиться,
+                    что Galaxy S21 Ultra настолько хорош?</h3>
+                <div class="pay__main__steps">
+                    <div class="pay__main__steps__item">
+                        <p>1</p>
+                        <p>Оставьте заявку
+                            на нашем сайте</p>
+                    </div>
+                    <div class="pay__main__steps__item">
+                        <p>2</p>
+                        <p>Получите выбранный
+                            смартфон</p>
+                    </div>
+                    <div class="pay__main__steps__item">
+                        <p>3</p>
+                        <p>Оплачивайте после
+                            получения</p>
+                    </div>
+                </div>
+                <img src="img/pay.png" alt="" id="pay">
+                <div class="pay__main__collection">
+                    <p>вы получите:</p>
+
+                    <p>Телефон, коробку, зарядное устройство (евростандарт), кабель USB Type-C, наушники</p>
+
+                </div>
+                <div class="pay__main__newPrice">
+                    <p>!</p>
+                    <p>Лучшая копия Galaxy S21 Ultra за 3250 MXN будет доступен только в текущий партии. Следующая партия смартфонов будет
+                        по новой цене.</p>
+                </div>
+            </div>
+        </div>
+        <div class="BlockLeft">
+            <div class="left__main">
+                <p>Осталось только <span>13</span> штук S21&nbspUltra в&nbspчерном цвете.
+                    
+                    Успейте&nbspзаказать&nbspсвой всего&nbspза&nbsp<span>3250</span>&nbspMXN!</p>
+                <a href="javascript:Order();">заказать сейчас</a>
+            </div>
+            <img src="img/footer.png" alt="" class="leftImg">
+            <img src="img/footer.png" class="rightImg" alt="">
+        </div>
+    </div>
+    <footer id="footerAnim">
+        <div class="footer__main">
+            <a href="javascript:Policy()">Политика конфиденциальности</a>
+            <p>Все права защищены. Copyright 2022</p>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js">
+   
+</script>
+
+
+</html>
